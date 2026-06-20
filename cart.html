@@ -1,0 +1,68 @@
+<style>
+    body{
+         background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);;
+    }
+    h1{
+        color: wheat;
+    }
+    ul{
+        color: wheat;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+
+<h1>🛒 My Cart</h1>
+
+<ul id="cart-list"></ul>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+
+<h1>🛒 My Cart</h1>
+
+<ul id="cart-list"></ul>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let list = document.getElementById("cart-list");
+
+cart.forEach(game => {
+
+    let li = document.createElement("li");
+
+    li.innerText = game;
+
+    list.appendChild(li);
+
+});
+
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>
