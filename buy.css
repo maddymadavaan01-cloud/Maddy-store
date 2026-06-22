@@ -148,3 +148,47 @@ background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1
  .eleven img{
    border-radius: 10px;
  }
+ @media (max-width:768px){
+
+    .one{
+        width:90%;
+        height:auto;
+        margin:20px auto;
+        display:block;
+    }
+
+    .three,
+    .seven,
+    .eleven{
+        justify-content:center;
+        margin-left:0;
+    }
+
+    .four,
+    .five,
+    .six,
+    .eight,
+    .nine,
+    .ten,
+    .twelve,
+    .thirteen,
+    .fourteen{
+        margin:15px;
+    }
+
+    img{
+        width:100%;
+        max-width:300px;
+        height:auto;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .cart{
+        margin-left:0;
+    }
+}
